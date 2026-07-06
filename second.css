@@ -1,0 +1,141 @@
+body{
+    margin:0;
+    min-height: 100vh;
+    background: #0f172a;
+    color: #f8fafc;
+    overflow-x:hidden;
+    position:relative;
+
+}
+
+body::before,
+body::after{
+    content:"";
+    position:fixed;
+    width:350px;
+    height: 350px;
+    border-radius: 50%;
+    filter:blur(120px);
+    z-index:-1;
+}
+
+body::before{
+    background:rgba(37,99,235,.3);
+    top: -120px;
+    left:-120px;
+}
+
+body::after{
+    background:rgba(113, 52, 255, 0.649);
+    bottom:--120px;
+    right:-120px;
+}
+
+
+
+.heading{
+    display:flex;
+    overflow: hidden;
+    width:100%;
+    max-width:1600px;
+    position: relative;
+    background:rgba(255,255,255,.08);
+    color: rgb(255, 255, 255);
+    justify-content: center;
+}
+
+.heading h1{
+        font-family: "Black Ops One";
+    font-weight:400;
+}
+
+.intro{
+    display:flex;
+    width: 100%;
+    max-width: 1600px;
+    background: whitesmoke;
+    position: relative;
+    top:4rem;
+    justify-content: center;
+    align-items: center;
+    border: 1px solis rgba(255,255,255,.08);
+    box-shadow: 0 0 25px rgba(113, 52, 255, 0.649);
+}
+
+.intro h1{
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+
+
+.dtcards-sec{
+    display:grid;
+    grid-template-rows: repeat(auto-fit,minmax(200px,1fr));
+    gap:30px;
+    position:relative;
+    top:5rem;
+    margin:1rem;
+}
+.dtcards{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10 20px rgba(0,0,0,.1);
+    transition:1s;
+}
+
+.dtcards:hover{
+    transform: translateY(-10px);
+    box-shadow:0 0 25px rgb(148,144,255);
+}
+.dtcards-content{
+    padding:20px;
+}
+.dtcards h2{
+    margin-bottom:10px;
+    color:rgb(0,0,0);
+}
+
+.dtcards p{
+    color:rgb(0,0,0);
+    line-height:1.6;
+    margin-bottom:20px;
+}
+.dt-btn{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom:1rem;
+}
+button{
+    background:#ff4949;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+    width:50%;
+    max-width: 1600px;
+    height: auto;
+
+}
+
+button:hover{
+    background:#ff2200;
+    box-shadow: 0 0 25px rgb(150, 88, 88);
+}
+
+button:active{
+    background:rgb(17, 80, 225) ;
+    transform: scale(0.8)
+    
+}
+
+button:visited{
+    background: rgb(17,80,225);
+}
+
+
+

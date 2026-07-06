@@ -1,0 +1,139 @@
+/* ===== PRELOADER ===== */
+
+#preloader{
+position:fixed;
+inset:0;
+background:#08111f;
+display:flex;
+justify-content:center;
+align-items:center;
+overflow:hidden;
+z-index:99999;
+transition:.8s;
+}
+
+#preloader.hide{
+opacity:0;
+visibility:hidden;
+}
+
+.loader-content{
+position:relative;
+z-index:5;
+text-align:center;
+}
+
+.loader-logo{
+width:110px;
+height:110px;
+border-radius:50%;
+object-fit:cover;
+animation:float 2s ease-in-out infinite;
+}
+
+.loader-title{
+margin-top:20px;
+color:white;
+font-size:2rem;
+transition: opacity .4s ease
+}
+
+.loading{
+display:flex;
+justify-content:center;
+gap:10px;
+margin-top:25px;
+}
+
+.loading span{
+width:12px;
+height:12px;
+background:white;
+border-radius:50%;
+animation:bounce .7s infinite alternate;
+}
+
+.loading span:nth-child(2){
+animation-delay:.2s;
+}
+
+.loading span:nth-child(3){
+animation-delay:.4s;
+}
+
+@keyframes bounce{
+
+from{
+transform:translateY(0);
+}
+
+to{
+transform:translateY(-12px);
+}
+
+}
+
+@keyframes float{
+
+50%{
+transform:translateY(-8px);
+}
+
+}
+
+/* ===== Smoke ===== */
+
+.smoke{
+
+position:absolute;
+
+width:320px;
+height:320px;
+
+background:rgba(255,255,255,.08);
+
+border-radius:50%;
+
+filter:blur(70px);
+
+animation:smoke 15s linear infinite;
+
+}
+
+.s1{left:-120px;bottom:-120px;}
+
+.s2{
+right:-150px;
+bottom:-100px;
+animation-delay:3s;
+}
+
+.s3{
+left:25%;
+bottom:-180px;
+animation-delay:6s;
+}
+
+.s4{
+right:20%;
+bottom:-160px;
+animation-delay:9s;
+}
+
+@keyframes smoke{
+
+0%{
+transform:translateY(150px) scale(.8);
+opacity:0;
+}
+
+30%{
+opacity:.2;
+}
+
+100%{
+transform:translateY(-900px) scale(1.8);
+opacity:0;
+}
+
+}
