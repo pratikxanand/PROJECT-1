@@ -100,7 +100,7 @@ text-decoration:underline;
     justify-content: center;
     align-items: center;
     position: relative;
-    top:-10rem;
+    top:-15rem;
 }
 
 .hero h1{
@@ -126,7 +126,7 @@ text-decoration:underline;
 
 .par{
     position: absolute;
-    top: 58%;
+    top: 54%;
 }
 
 .par p{
@@ -208,7 +208,7 @@ padding:0;
 
 
 .card{
-    background:rgba(255,255,255,.08);
+    background:#f0ede4;
     border-radius:15px;
     overflow:hidden;
     box-shadow:0 10px 25px black;
@@ -238,7 +238,7 @@ padding:0;
 
 .card-content h2{
     margin-bottom:10px;
-    color:#741a2f;
+    color:#004741;
 }
 
 .card-content p{
@@ -248,7 +248,7 @@ padding:0;
 }
 
 button{
-    background:#ff4949;
+    background:#ff6505;
     color:white;
     border:none;
     padding:12px 20px;
