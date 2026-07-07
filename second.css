@@ -1,7 +1,7 @@
 body{
     margin:0;
     min-height: 100vh;
-    background: #0f172a;
+    background: #ffffff;
     color: #f8fafc;
     overflow-x:hidden;
     position:relative;
@@ -20,14 +20,14 @@ body::after{
 }
 
 body::before{
-    background:rgba(37,99,235,.3);
+    background:rgb(149, 147, 255);
     top: -120px;
     left:-120px;
 }
 
 body::after{
     background:rgba(113, 52, 255, 0.649);
-    bottom:--120px;
+    bottom:-120px;
     right:-120px;
 }
 
@@ -39,7 +39,7 @@ body::after{
     width:100%;
     max-width:1600px;
     position: relative;
-    background:rgba(255,255,255,.08);
+    background:rgb(0, 0, 0);
     color: rgb(255, 255, 255);
     justify-content: center;
 }
@@ -77,11 +77,12 @@ body::after{
     margin:1rem;
 }
 .dtcards{
-    background:white;
+    background:rgb(200, 194, 255);
     border-radius:15px;
     overflow:hidden;
-    box-shadow:0 10 20px rgba(0,0,0,.1);
+    box-shadow:0 10 20px rgb(121, 114, 214);
     transition:1s;
+    border: 1px soild black;
 }
 
 .dtcards:hover{
@@ -137,5 +138,59 @@ button:visited{
     background: rgb(17,80,225);
 }
 
+.form-sec{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.form{
+
+    background: rgba(0, 0, 0, 0.527);
+    position: relative;
+    top: 2rem;
+    border-radius: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.frn-content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align:left;
+    background: #faedb0;
+    color: black;
+    position: relative;
+    top: 4rem;
+    font-size: 18px;
+}
+
+.frn-btn{
+    display: flex;
+    justify-content: center;
+    color: #ffde5a;
+    background: #9b2d2d;
+    position: relative;
+    width: 100%;
+    top:7rem;
+    font-size: 20px;
+    font-weight:bold ;
+}
+
+
+.frn-btn:hover{
+    background:#ff2200;
+    box-shadow: 0 0 25px rgb(150, 88, 88);
+    color:#000000;
+}
+
+.frn-btn:active{
+    background:rgb(17, 80, 225) ;
+    transform: scale(0.8)
+    
+}
+
+.frn-btn:visited{
+    background: rgb(17,80,225);
+}
 
 
