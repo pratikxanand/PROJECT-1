@@ -453,6 +453,7 @@ button:visited{
     grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
     gap:30px;
     position: relative;
+    
 
 }
 
@@ -492,6 +493,67 @@ button:visited{
 }
 
 .std-card-content p{
+    color:rgb(0, 0, 0);
+    line-height:1.6;
+    margin-bottom:20px;
+}
+
+.tea-cla{
+    background:rgb(0, 0, 0);
+    width: 100%;
+    height: auto;
+    max-width: 1600px;
+    padding: 50px;
+}
+.tr-cla{
+    background: #000000;
+    top:1rem;
+}
+.teacher{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    position: relative;
+    
+
+}
+
+
+
+.tr-card{
+    background:#ffff89;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 10px 25px black;
+    transition:1s;
+}
+
+
+
+
+
+.tr-card:hover{
+    box-shadow:0 0 25PX rgb(148, 144, 255);
+}
+
+.tr-card img{
+    width:100%;
+    height:auto;
+    object-fit:cover;
+}
+
+
+
+.tr-card-content{
+    padding:20px;
+}
+
+.tr-card-content h2{
+    margin-bottom:10px;
+    color:#000000;
+}
+
+.tr-card-content p{
     color:rgb(0, 0, 0);
     line-height:1.6;
     margin-bottom:20px;

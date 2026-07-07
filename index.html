@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="web.css">
     <link rel="stylesheet" href="mainloader.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
     <link rel="icon" type="image/jpeg"href="logo12.jpg">
       
        <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +16,7 @@
 
 </head>
 <body>
+    
     <div id="preloader">
 
     <div class="smoke s1"></div>
@@ -62,15 +64,12 @@
     <img src="xavier.jpg" alt="St. Xavier's School">
     
     <div class="hero">
-        <h1>Empowering Minds, Preserving Legacy</h1>
+        <h1 data-aos="fade-up">Empowering Minds, Preserving Legacy</h1>
     </div>
 
-    <div class="hero-p">
-        <h2>Shaping Bright Minds for a Better Tomorrow</h2>
-    </div>
 
     <div class="par">
-        <p>
+        <p data-aos="fade-up" data-aos-delay="200">
             Welcome to our school, where learning inspires curiosity,
             creativity, and confidence. We are committed to providing a
             safe, inclusive, and engaging environment that empowers every
@@ -83,10 +82,10 @@
 
 </div>
         
-<section class="cards-section">
+<section class="cards-section" data-aos="zoom-in">
 
-    <div class="card">
-        <img src="xavier.jpg" alt="Card Image">
+    <div class="card" data-aos="fade-up">
+        <img src="xavier.jpg" alt="Card Image" data-aos="fade-right">
         <div class="card-content">
             <h2>School campus</h2>
             <p>
@@ -101,7 +100,7 @@
     </div>
 
     <div class="card">
-        <img src="pr.jpg" alt="Card Image">
+        <img src="pr.jpg" alt="Card Image" data-aos="fade-left">
         <div class="card-content">
             <h2>PRINCIPLE</h2>
             <p>
@@ -112,7 +111,7 @@
     </div>
 
     <div class="card">
-        <img src="tr.jpg" alt="Card Image">
+        <img src="tr.jpg" alt="Card Image" data-aos="fade-right">
         <div class="card-content">
             <h2>Best Teachers</h2>
             <p>
@@ -123,7 +122,7 @@
     </div>
 
     <div class="card">
-        <img src="gallery.jpg" alt="Card Image">
+        <img src="gallery.jpg" alt="Card Image" data-aos="fade-left">
         <div class="card-content">
             <h2>School Celebrations</h2>
             <p>
@@ -137,9 +136,9 @@
 </section>
 
 
-<section class="stats">
+<section class="stats" >
 
-    <div class="stat-box">
+    <div class="stat-box" data-aos="flip-right">
 
             <h2 class="counter" data-target="2000">
                 0
@@ -147,7 +146,7 @@
             <p>Students</p>
     </div>
 
-    <div class="stat-box">
+    <div class="stat-box" data-aos="flip-right">
 
         <h2 class="counter" data-target="60">
             0
@@ -155,7 +154,7 @@
             <p>Teachers</p>
     </div>
 
-    <div class="stat-box">
+    <div class="stat-box" data-aos="flip-right">
 
         <h2 class="counter" data-target="30">
             0
@@ -163,16 +162,17 @@
             <p>Year of Excellence</p>
     </div>
 
-    <div class="stat-box">
+    <div class="stat-box" data-aos="flip-right">
         <h2 class="counter" data-target="100">
             0
         </h2>
         <p>Board Result(%)</p>
     </div>
+    
 <div class="std-cla">
     <H1>TOPPERS</H1>
     <div class="student">
-            <div class="std-card">
+            <div class="std-card" data-aos="flip-up" >
                  <img src="gjo.jpg" alt="student" Image">
         <div class="std-card-content">
             <h2 >SOTURU GOJO</h2>
@@ -182,7 +182,7 @@
             </div>
             </div>
             <div class="student">
-            <div class="std-card">
+            <div class="std-card" data-aos="flip-up">
                  <img src="sku.jpg" alt="Student Image">
         <div class="std-card-content">
             <h2>RYOMEN SUKUNA</h2>
@@ -193,6 +193,37 @@
             </div>
         </div>
         </div>
+        </div>
+        
+<section class="tea-cla">
+        <div class="tr-cla">
+    <H1>BEST TEACHERS</H1>
+    <div class="teacher">
+            <div class="tr-card" data-aos="flip-up">
+                 <img src="gjo.jpg" alt="student">
+        <div class="std-card-content">
+            <h2 >-NO-DATA-</h2>
+            <p>
+                A GREAT TEACHER FROM SCIENCE FACULTY, A GOATED TEACHER OF ST XAVIER'S
+            </p>
+            </div>
+            </div>
+            <div class="teacher">
+            <div class="tr-card" data-aos="flip-up">
+                 <img src="sku.jpg" alt="Student Image">
+        <div class="std-card-content">
+            <h2>RYOMEN SUKUNA</h2>
+            <p>
+                A GREAT STUDENT FROM ST XAVIER'S WHO GO 94% IN CLASS 10 BOARDS
+            </p>
+            </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </section>
+
+
 </section>
 <footer class="footer">
     <div class="footer-content">
@@ -210,7 +241,9 @@
    
 </footer>
     <script src="web.js"></script>
-    
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
     
 </body>
 </html>

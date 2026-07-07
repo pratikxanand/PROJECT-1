@@ -1,13 +1,9 @@
+// ===============================
+// Wait for page to fully load
+// ===============================
+window.addEventListener("load", () => {
 
-
-window.onload = function () {
-    alert("1");
-
-    const counters = document.querySelectorAll(".counter");
-
-    alert("Found: " + counters.length);
-};
-window.onload = function () {
+    // Counter Animation
     const counters = document.querySelectorAll(".counter");
 
     counters.forEach(counter => {
@@ -23,14 +19,19 @@ window.onload = function () {
             }
 
             counter.innerText = current;
-        }, 100);
+        }, 30);
     });
-};
 
+});
+
+
+// ===============================
+// Loader Text Animation
+// ===============================
 const loaderTexts = [
     "Connecting to server",
     "Getting access from server",
-     "User verified successfully",
+    "User verified successfully",
     "Loading Resources...",
     "St. Xavier's School"
 ];
@@ -40,8 +41,6 @@ const preloader = document.getElementById("preloader");
 
 let current = 0;
 
-// Total loader time = 7 seconds
-// 5 messages => change every 1.4 seconds
 const changeInterval = 1400;
 
 const textInterval = setInterval(() => {
@@ -63,12 +62,27 @@ const textInterval = setInterval(() => {
 }, changeInterval);
 
 
-// Hide loader after 7 seconds
+// ===============================
+// Hide Loader After 7 Seconds
+// ===============================
 setTimeout(() => {
 
     clearInterval(textInterval);
 
     preloader.classList.add("hide");
 
-}, 7000);
+    // Initialize AOS AFTER loader disappears
+    setTimeout(() => {
 
+        AOS.init({
+            duration: 1000,
+            easing: "ease-in-out",
+            once: true,
+            offset: 120
+        });
+
+        AOS.refresh();
+
+    }, 700); // Match this to your loader hide transition
+
+}, 7000);
