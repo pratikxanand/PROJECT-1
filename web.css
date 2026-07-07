@@ -96,11 +96,8 @@ text-decoration:underline;
 }
 
 .hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top:-15rem;
+    position: absolute;
+    top: 20%;
 }
 
 .hero h1{
@@ -111,11 +108,8 @@ text-decoration:underline;
 }
 
 .hero-p{
-    display:flex;
-    justify-content: center;
-    align-items: center;
     position: absolute;
-    
+    top: 46%;
 }
 
 .hero-p h2{
@@ -126,7 +120,7 @@ text-decoration:underline;
 
 .par{
     position: absolute;
-    top: 54%;
+    top: 55%;
 }
 
 .par p{
@@ -151,6 +145,36 @@ text-decoration:underline;
     background: #0b4a8b;
     color: #fff;
     transform: translateY(-4px);
+}
+
+@media (max-width:768px){
+
+    .hero{
+        top: 20%;
+    }
+
+    .hero h1{
+        font-size: 2.3rem;
+    }
+
+    .hero-p{
+        top: 40%;
+    }
+
+    .hero-p h2{
+        font-size: 1.3rem;
+    }
+
+    .par{
+        top: 50%;
+        width: 90%;
+    }
+
+    .par p{
+        font-size: .95rem;
+        line-height: 1.6;
+    }
+
 }
 
 .navbar{
