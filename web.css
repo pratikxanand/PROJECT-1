@@ -473,6 +473,7 @@ button:visited{
 
 .std-card:hover{
     box-shadow:0 0 25PX rgb(148, 144, 255);
+    transition: 1s ease all;
 }
 
 .std-card img{
@@ -524,7 +525,7 @@ button:visited{
     background:#ffff89;
     border-radius:15px;
     overflow:hidden;
-    box-shadow:0 10px 25px black;
+    box-shadow:0 0px 10px rgb(255, 255, 255);
     transition:1s;
 }
 
