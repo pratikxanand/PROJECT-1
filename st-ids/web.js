@@ -142,3 +142,12 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
         alert("Invalid Student ID or Password!");
     }
 });
+
+function downloadFile() {
+    const a = document.createElement("a");
+    a.href = "STUDENT1RESULT.pdf";
+    a.download = "user-result.pdf";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+}
