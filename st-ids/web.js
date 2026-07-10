@@ -123,8 +123,8 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     }
 
     // Student 2
-    else if (id === "ST002" && password === "abc123") {
-        window.location.href = "student2.html";
+    else if (id === "ST002" && password === "samsan") {
+        window.location.href = "st-ids/sanskar.html";
     }
 
     // Student 3
@@ -143,10 +143,10 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     }
 });
 
-function downloadFile() {
+function downloadReport(studentId) {
     const a = document.createElement("a");
-    a.href = "STUDENT1RESULT.pdf";
-    a.download = "user-result.pdf";
+    a.href = `reportcards/${studentId}.pdf`;
+    a.download = `${studentId}_Report_Card.pdf`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
