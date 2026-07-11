@@ -118,8 +118,8 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     const password = document.getElementById("password").value;
 
     // Student 1
-    if (id === "ST001" && password === "12345") {
-        window.location.href = "st-ids/student1.html";
+    if (id === "ST001" && password === "anything") {
+        window.location.href = "st-ids/arshit.html";
     }
 
     // Student 2

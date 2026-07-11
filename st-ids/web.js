@@ -1,3 +1,4 @@
+
 // ===============================
 // Wait for page to fully load
 // ===============================
@@ -118,8 +119,8 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     const password = document.getElementById("password").value;
 
     // Student 1
-    if (id === "ST001" && password === "12345") {
-        window.location.href = "st-ids/student1.html";
+    if (id === "ST001" && password === "anything") {
+        window.location.href = "st-ids/arshit.html";
     }
 
     // Student 2
@@ -143,11 +144,20 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     }
 });
 
-function downloadReport(studentId) {
-    const a = document.createElement("a");
-    a.href = `reportcards/${studentId}.pdf`;
-    a.download = `${studentId}_Report_Card.pdf`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
+function showMessage() {
+    alert("The Result Will Available Soon!");
+}
+function showmessage(){
+    alert("Edit function is available only for admin contact pratikxanand@gmail.com to edit your profile")
+}
+
+
+function openSidebar(){
+    document.getElementById("sidebar").classList.add("active");
+    document.getElementById("overlay").classList.add("active");
+}
+
+function closeSidebar(){
+    document.getElementById("sidebar").classList.remove("active");
+    document.getElementById("overlay").classList.remove("active");
 }
