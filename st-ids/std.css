@@ -31,7 +31,14 @@ body::after{
     right:-120px;
 }
 
+.pfp-sec{
+    display: flex;
+    justify-content:left;
+    align-items:flex-start;
+}
+
 .pfp{
+    
     position: relative;
     z-index: 10;
     top: -4.7rem;
@@ -112,8 +119,8 @@ body::after{
 
 .heading{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content:right;
+    
     background: #fffacd;
     border: 1px solid #000;
 }
@@ -121,7 +128,8 @@ body::after{
 .heading h2{
     color: rgb(255, 199, 126);
     font-size: 28px;
-    margin-left:2rem;
+    margin-right:10px;
+   
 }
 
 .wlc{
@@ -224,6 +232,7 @@ h2{
 }
 
 }
+
 
 .rslt{
      display: flex;
