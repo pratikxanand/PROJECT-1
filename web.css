@@ -1,7 +1,7 @@
 body{
     margin:0;
     min-height: 100vh;
-    background: #ffffff;
+    background: #3b3a90;
     color: #f8fafc;
     overflow-x:hidden;
     position:relative;
@@ -556,7 +556,9 @@ button:visited{
     max-width:420px;
     margin: 50px auto;
     padding: 35px;
-    background: #111;
+    background:rgba(255,255,255,.12);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
     border-radius: 18px;
     position: relative;
     top:6rem;
