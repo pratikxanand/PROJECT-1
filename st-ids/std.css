@@ -35,6 +35,7 @@ body::after{
     display: flex;
     justify-content:left;
     align-items:flex-start;
+    
 }
 
 .pfp{
@@ -46,7 +47,7 @@ body::after{
     height: 65px;     /* Fixed height */
     border-radius: 50%; /* Makes it a circle */
     object-fit: cover;  /* Prevents stretching */
-    border: 3px solid #fff; /* Optional border */
+    border: 3px solid #000000; /* Optional border */
 }
 .sidebar{
     position:fixed;
@@ -89,8 +90,52 @@ body::after{
     width:90px;
     height:90px;
     border-radius:50%;
+    border: 1px solid black;
     display:block;
     margin:20px auto;
+}
+.bottom-nav{
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    border-radius: 30px;
+    height: 70px;
+    background:rgb(255, 255, 255);
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.15);
+
+    z-index: 9999;
+}
+
+.bottom-nav a{
+    text-decoration: none;
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    transition: .3s;
+   
+}
+
+
+.bottom-nav a i{
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.bottom-nav a:hover{
+    color: #000000;
+    background:#ff8b44;
+    border-radius: 40px;
+    padding: 10px;
+    
+    
 }
 
 .sidebar h2,
@@ -102,13 +147,16 @@ body::after{
     display:block;
     padding:12px;
     text-decoration:none;
-    color:#333;
+    color:#ffffff;
     margin:8px 0;
     border-radius:8px;
 }
 
 .sidebar a:hover{
-    background:#eee;
+    background:rgba(255, 255, 255, 0.301);
+    border: 1px solid rgba(255,255,255,.600);
+    box-shadow: 0, 10px, 10px rgb(255, 95, 95);
+    color:black;
 }
 
 .close{

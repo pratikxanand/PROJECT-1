@@ -1,7 +1,7 @@
 body{
     margin:0;
     min-height: 100vh;
-    background: #3b3a90;
+    background: #b59fff;
     color: #f8fafc;
     overflow-x:hidden;
     position:relative;
@@ -153,7 +153,7 @@ text-decoration:underline;
 }
 
 .btn:hover{
-    background: #0b4a8b;
+    background: #ffa02d;
     color: #fff;
     transform: translateY(-4px);
 }
@@ -188,46 +188,49 @@ text-decoration:underline;
 
 }
 
-.navbar{
-    display:flex;
-    justify-content: center;
-    
-    background:black;
-    position: relative;
-    left:0rem;
-    padding:1%;
-    font-family: "Bebas Neue";
-}
+.bottom-nav{
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    border-radius: 30px;
+    height: 70px;
+    background:rgb(255,255,255,.700);
 
-.nav-links{
     display: flex;
-    justify-content: center;
- 
-list-style: none;
-gap:1rem;
-font-size: 1.8rem;
+    justify-content: space-around;
+    align-items: center;
 
-list-style:none;
+    box-shadow: 0 -3px 10px rgba(0,0,0,0.15);
 
-margin:0;
-padding:0;
+    z-index: 9999;
 }
 
-.nav-links a{
+.bottom-nav a{
     text-decoration: none;
-    color:rgb(255, 255, 255);
+    color: #444;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 14px;
+    transition: .3s;
+   
 }
 
-.nav-links a:hover{
-    display:flex;
-    color:rgb(186, 37, 240);
-    text-shadow:0 0 23px rgb(98, 0, 255);
+
+.bottom-nav a i{
+    font-size: 22px;
+    margin-bottom: 4px;
+}
+
+.bottom-nav a:hover{
+    color: #000000;
+    background:rgba(255, 255, 255, 0.811);
+    border-radius: 40px;
+    padding: 10px;
     
-    border-radius: 6px;
-    gap: 1rem;
+    
 }
-
-
 
 
 
@@ -556,13 +559,17 @@ button:visited{
     max-width:420px;
     margin: 50px auto;
     padding: 35px;
-    background:rgba(255,255,255,.12);
+    background:rgba(255, 255, 255, 0.288);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
     border-radius: 18px;
     position: relative;
     top:6rem;
+    border: 1px solid rgba(255,255,255,.700);
     
+}
+#title{
+    color: black;
 }
 
 .toggle{

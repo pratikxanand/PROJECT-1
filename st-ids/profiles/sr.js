@@ -84,9 +84,9 @@ setTimeout(() => {
 
         AOS.refresh();
 
-    }, 300); // Match this to your loader hide transition
+    }, 700); // Match this to your loader hide transition
 
-}, 3000);
+}, 7000);
 
 const studentBtn = document.getElementById("studentBtn");
 const teacherBtn = document.getElementById("teacherBtn");
@@ -161,3 +161,4 @@ function closeSidebar(){
     document.getElementById("sidebar").classList.remove("active");
     document.getElementById("overlay").classList.remove("active");
 }
+
