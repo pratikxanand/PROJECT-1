@@ -128,8 +128,8 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     }
 
     // Student 3
-    else if (id === "ST003" && password === "xavier") {
-        window.location.href = "student3.html";
+    else if (id === "ST003" && password === "abhisheksharma") {
+        window.location.href = "st-ids/ayushi.html";
     }
 
     // Student 4
