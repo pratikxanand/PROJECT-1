@@ -590,7 +590,15 @@ button:visited{
     z-index:2;
     font-weight:bold;
 }
-
+.toggle-password{
+    position: absolute;
+    right: 10px;
+    top: 71%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    user-select: none;
+    font-size: 20px;
+}
 .slider{
     position:absolute;
     width:50%;
