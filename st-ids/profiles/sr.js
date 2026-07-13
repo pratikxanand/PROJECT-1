@@ -134,8 +134,8 @@ document.getElementById("loginForm").addEventListener("submit", function(e) {
     }
 
     // Student 4
-    else if (id === "ST004" && password === "pass004") {
-        window.location.href = "student4.html";
+       else if (id === "ST004" && password === "kaluwa") {
+        window.location.href = "st-ids/ansh.html";
     }
 
     // Invalid login
